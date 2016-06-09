@@ -9,7 +9,6 @@ namespace BowlingGame.Classes
     {
         private Symbols symbols;
         private GameValidation gameValidation;
-
         /// <summary>
         /// Base constructor
         /// </summary>
@@ -17,7 +16,6 @@ namespace BowlingGame.Classes
         {
             if (symbols == null) symbols = new Symbols();
         }
-
         /// <summary>
         /// Constructor if we want to use a custom symbol set
         /// </summary>
@@ -40,10 +38,8 @@ namespace BowlingGame.Classes
             {
                 result.Score = CalculateScore(result.GameFrames, result.BonusBalls);
             }
-
             return result;
         }
-
         /// <summary>
         /// Calculate score based on a split input
         /// </summary>
@@ -155,7 +151,6 @@ namespace BowlingGame.Classes
             }
             return cumulativeScore;
         }
-
         /// <summary>
         /// Convert char from input string to a numerical score
         /// </summary>
